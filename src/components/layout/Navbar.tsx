@@ -7,17 +7,14 @@ const Navbar = () => {
     <nav className="h-14 border-b border-border flex items-center justify-between px-6 bg-background/50 backdrop-blur-md z-10">
       <div className="flex items-center gap-4">
         {/* We assume logo.png is in public/images/logo.png */}
-        <div className="flex items-center gap-2">
-          <div className="relative w-8 h-8 rounded-lg overflow-hidden bg-white/10 flex items-center justify-center border border-white/5">
-             <Image 
-                src="/images/logo.png" 
-                alt="CreatorFlow Logo" 
-                width={24} 
-                height={24}
-                className="object-contain"
-             />
-          </div>
-          <span className="font-semibold text-lg tracking-tight">CreatorFlow</span>
+        <div className="relative h-8 w-32">
+          <Image 
+            src="/images/logo.png" 
+            alt="CreatorFlow" 
+            fill
+            className="object-contain object-left"
+            priority
+          />
         </div>
       </div>
 
